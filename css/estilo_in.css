@@ -1,0 +1,458 @@
+@charset "utf-8";
+/* CSS Document */
+/*==========#Base del index
+               #preloader
+               #navbar
+               #buscador
+               #footer
+
+*/
+/*=======================BASE DEL index.html====================*/
+
+
+/*CONTENEDOR DEl estilo PRELOADER*/
+#contenedor_carga{
+	background: #fff;
+	height: 100%;
+	width: 100%;
+	position: fixed;
+	transition: all 1s ease;
+	z-index: 210000;
+}
+#carga{
+	border: 15px solid #fff;
+	border-top-color: #000;
+	border-top-style: groove;
+	height: 100px;
+	width: 100px;
+	border-radius: 100%;
+	position: absolute;
+	top: 0;
+	left: 0;
+	right: 0;
+	bottom: 0;
+	margin: auto;
+	animation: girar 1.5s linear infinite;
+}
+@keyframes girar {
+	from{transform: rotate(0deg)}
+	to{transform: rotate(360deg)}
+}
+/*FIN DE CONTENEDOR DE PRELOADER*/
+
+
+/*CONTENEDOR DEL NAVBAR*/
+.navbar{
+	border: 0px;
+	border-radius: 0px;
+}
+.dropdown-menu{
+	background: #FFFFFF;
+	color: #000000
+		
+}
+.dropdown-menu li a:hover{
+	background: #000000;
+	color: #FFFFFF;
+}
+.navbar-default{
+	background-color: black;
+	margin-bottom: 0px;
+}
+.navbar-default .navbar-nav li a:hover{
+	color: #000000;
+	background: #FFFFFF;
+}
+.navbar-default .navbar-brand:hover{
+	    color: #cecece;
+}
+.navbar-default .navbar-nav .active a:hover{
+	color:#FFFFFF;
+	background: #000000;
+}
+
+.navbar{
+	border-radius: 0 px;
+}
+
+.navbar-default .navbar-nav > li > a {
+    color: #fff;
+	
+}
+.navbar-default .navbar-brand {
+	color: #fff;
+}
+/*FIN DEL CONTENEDOR DEL NAVBAR*/
+
+
+/*CONTENEDOR DEL SEARCH*/
+header{
+	width: 100%;
+}
+
+.header-top{
+	width: 100%;
+}
+
+.navegacion{
+	width: 90%;
+	max-width: 1000px;
+	margin: 0px 5px 0px 0px;
+	padding: 0px 0;
+	
+}
+
+input[type="search"]{
+	padding: 10px;
+	padding-right: 35px;
+	border: none;
+}
+
+.search{
+	width: 90%;
+	max-width: 1000px;
+	margin: auto;
+	background: #fff;
+	padding:0 10px;
+	padding-bottom: 5px;
+	max-height: 85%;
+	overflow-x: hidden;
+	display: none;
+	
+}
+
+.search-table{
+	width: 100%;
+}
+
+tbody tr td{
+	width: 100%;
+	
+}
+
+tbody tr td a{
+	font-size: 18px;
+	color: #000;
+	display: block;
+	width: 100%;
+	height: 100%;
+	padding: 20px 0px;
+	padding-left: 20px;
+	border: 2px solid #fff;
+	transition: .5s;
+}
+
+tbody tr td a:hover{
+	text-decoration: none;
+	color: #FFFFFF;
+	background: #000;
+	padding: 20px 20px;
+	text-align: center;
+}
+
+.search::-webkit-scrollbar{ 
+	background:rgba(0,0,0,0);  
+}
+
+.search::-webkit-scrollbar-button{
+ 	background:#C1C1C1;  
+}
+
+.search::-webkit-scrollbar-thumb{ 
+	background:#C1C1C1; 
+}
+
+.dataTables_length,
+.dataTables_filter,
+.dataTables_info,
+.dataTables_paginate {
+	display: none;
+}
+/*FIN DEL CONTENEDOR SEARCH*/
+
+
+/*CONTENEDOR DEL PIE DE PAGINA*/
+.pie01{
+	background-color: black;
+	color: #fff;
+	margin-top: 60px;
+	
+}
+.pie01 a{
+	color: #fff;
+	transition: all 0.9s;
+}
+
+.pie01 a:hover{
+	color:lightslategray;
+	text-decoration: none;
+	
+}
+
+
+.pie02{
+	background-color: black;
+	color: #fff;
+	padding-top: 5px;
+	padding-bottom: 10px;
+}
+
+
+@media only screen and (max-width:750px){
+	
+	.carousel-caption{
+		background-color: transparent,
+	}
+}
+
+/*FIN DEL CONTENEDOR PIE DE PAGINA*/
+
+
+/*=======================FIN DE LA BASE DEL index.html====================*/
+
+
+/*=======================Contenedor del estilo del index=========================*/
+
+/*-stilo slider.
+  -stilo parallax.
+  -stilo de imagenes con texto
+*/
+
+/*CONTENEDOR DEL ESTILO SLIDER*/
+.carousel-indicators li{
+	transition: all 0.8s ease-in-out;
+	
+}
+.carousel-caption{
+	background-color: rgba(0,0,0,0.5)
+}
+.carousel-indicators li:hover{
+	background: #FFFFFF;
+}
+.carousel-control{
+	    color: #040404;
+	transition: all 1s ease-in-out; 
+	    
+}
+/*FIN DEL CONTENEDOR DEL ESTILO SLIDER*/
+
+/*CONTENEDOR DEL PARALLAX*/
+.parallax3{
+	background-attachment: fixed;
+	background-position: center;
+	background-repeat: no-repeat;
+	background-size:  cover;
+	height:55rem;
+	max-width: 100%;
+	position: relative
+}
+
+.texto-interior3{
+	color:#fff;
+	font-size: 34px;
+	font-weight: bold;
+	left: 10%;
+	position: absolute;
+	text-align: center;
+	top:20%;
+	width: 80%;
+		background-color:rgba(0,0,0,0.50);
+
+
+}
+.texto-interior3 img{
+	margin: 10px 0px 0px 0px;
+}
+.texto-interior3 h3{
+	margin: 50px 0px 0px 0px;
+	text-align:justify;
+}
+.img-cinco{
+	background-image:url( ../imagenes/muestra1.jpg);
+}
+@media screen and (max-width: 1450px){
+     	.parallax3 embed{
+		max-height:250px;
+		max-width:450px;
+	}
+}
+
+@media screen and (max-width: 1400px){
+     	.parallax3 embed{
+		max-height: 200px;
+		max-width:400px;
+		margin-top: 40px;
+		background-size: cover;
+	}
+}
+@media screen and (max-width: 1360px){
+	.parallax3 embed{
+		max-height: 180px;
+        max-width: 300px;
+        margin-top: 30px;
+	}
+}
+@media screen and (max-width: 1318px){
+     	.parallax3 embed{
+		max-height: 180;
+		max-width:380;
+		margin-top: 30px;
+	}
+}
+@media screen and (max-width: 1200px){
+	.parallax3{
+	    height:90rem;
+	}
+	.parallax3 embed{
+		max-height: 160px;
+		max-width:360px;
+	}
+	.parallax3{
+	height:95rem;
+	max-width: 100%;
+	position: relative
+}
+}
+@media screen and (max-width: 1098px){
+	.parallax3 embed{
+		margin-top: 50px;
+		max-height: 160px;
+		max-width:200px;
+	}
+}
+@media screen and (max-height: 991px){
+	  .parallax3 embed{
+		margin-top: 10px;
+		max-height: 270px;
+		max-width:300px;
+	}
+}
+@media screen and (max-width: 718px){
+	.parallax3 h3{
+		font-size:14px;
+}
+}
+@media screen and (max-width: 730px){
+	.parallax3{
+	height:95rem;
+	max-width: 100%;
+	position: relative
+}
+}
+@media screen and (max-width: 470px){
+	.parallax3{
+	height:115rem;
+}
+}
+@media screen and (max-width: 360px){
+	.parallax3{
+	height:80rem;
+}
+}
+@media screen and (max-width: 320px){
+	.parallax3{
+	height:100rem;
+}
+}
+
+/*FIN DEL PARALLAX*/
+
+/*CONTENEDOR DE IMAGENES Y TEXTO*/
+#animacion-item{
+	position: relative;
+	overflow: hidden;
+}
+#animacion-item2{
+	position: relative;
+	overflow: hidden;
+}
+#animacion-item3{
+	position: relative;
+	overflow: hidden;
+}
+.animacion-img{
+	transition: all 0.5s;
+}
+.animacion-text{
+	position: absolute;
+	bottom: 0;
+	padding: 20px;
+	background: rgba(0,0,0,0.7);
+	color: #FFFFFF;
+	transform: translateY(100%);
+	transition: all 0.5s ease-out;
+		
+}
+.animacion-text p{
+	text-align: justify;
+}
+
+#animacion-item:hover .animacion-text{
+	transform: translateY(0%);
+}
+#animacion-item:hover .animacion-img{
+	transform: scale(1.15);
+	filter:blur(5px);
+	
+}
+#animacion-item2:hover .animacion-text{
+	transform: translateY(0%);
+}
+#animacion-item2:hover .animacion-img{
+	transform: scale(1.15);
+	filter:blur(5px);
+}
+#animacion-item3:hover .animacion-text{
+	transform: translateY(0%);
+}
+#animacion-item3:hover .animacion-img{
+	transform: scale(1.15);
+	filter:blur(5px);
+} 
+/* BOTON*/
+a.boton{
+	font-family: 'Montserrat', sans-serif;
+	text-transform:uppercase;
+	letter-spacing:2px;
+	display:inline-block;
+	margin: 1px 0%;
+	text-decoration:none;
+	color:#fff;
+	padding:10px 30px;
+	border: 2px solid #fff;
+	border-radius:5px;
+	position:relative;
+	overflow:hidden;
+	transition: all ease 400ms;
+    -webkit-transition: all ease 400ms;
+    -moz-transition: all ease 400ms;
+    -ms-transition: all ease 400ms;
+}
+a.boton span{
+	display:block;
+	position:absolute;
+	background: #FFF;
+	transition: all ease 400ms;
+    -webkit-transition: all ease 400ms;
+    -moz-transition: all ease 400ms;
+    -ms-transition: all ease 400ms;
+	z-index:-1;
+}
+a.boton:hover{
+	color:#000;
+	border: 2px solid #D3D3D3;
+}
+a.boton span.left{
+	left:-20%;
+	top:0;
+	right:110%;
+	bottom:0;
+	transform:skewX(-30deg);
+}
+a.boton:hover span.left{
+	right:-13%;
+}
+/* FIN DE CONTENEDOR DE IMAGENES Y TEXTO*/
+
+/*=======================fin del Contenedor del estilo del index=========================*/
+
